@@ -79,4 +79,80 @@ body{
   height:92.3vh;
   width: 100vw;
   position:relative;
+  z-index:0;
+}
+
+#userInput
+{
+  position:absolute;
+  z-index:2;
+  left:110px;
+}
+
+#srcInput{
+  height:30px;
+  width:200px;
+  border-radius:10px;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+
+#srcInput::placeholder
+{
+  color:black;
+}
+
+#dstInput{
+  height:30px;
+  width:200px;
+  border-radius:10px;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+
+#dstInput::placeholder
+{
+  color:black;
+}
+
+#calBtn
+{
+	width:50px;
+	height:25px;
+  border-radius:10px;
+  background-color: white;
+  font-weight: bold;
+	display: inline;
+}
+
+#calBtn:hover{
+	cursor: pointer;
+	background-color: rgba(211, 211, 211, 0.827);
+}
+
+#calBtn:active{
+	background-color: rgba(211, 211, 211, 0.744);
+}
+
+#autocomplete{
+	display:none;
+}
+
+.li-autocomplete{
+	background-color: white;
+	list-style-type: none;
+	border:2px black;
+	width:500px;
+	font-weight:bold;
+}
+
+.li-autocomplete:hover{
+	background-color:rgba(102, 101, 101, 0.848);
+	cursor: pointer;
+}
+
+.li-autocomplete:active{
+	background-color:rgba(102, 101, 101, 0.651);
 }
