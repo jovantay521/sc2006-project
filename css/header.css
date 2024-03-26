@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  height: 55px;
+  background-color: grey;
+}
+
+.left-section {
+  /* border: 2px lightpink solid; */
+  align-items: center;
+  display: flex;
+}
+
+.nav-link.website-logo {
+  padding: 0px 20px;
+}
+
+.singapore-flag {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.middle-section {
+  /* flex: 1; */
+  /* margin-left: 50px; */
+  /* margin-right: 50px; */
+  /* border: 2px lightpink solid; */
+  /* padding: 0px 20px; */
+  display: flex;
+  justify-content: center;
+  background-color: rgb(120, 120, 120);
+}
+
+.nav-link {
+  /* border: 2px lightblue solid; */
+  padding: 0px 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+}
+
+.nav-link.border::before {
+  content: '';
+  border-left: 1px solid #fff;
+  opacity: .5;
+  height: 26px;
+  position: absolute;
+  left: 0px;
+}
+
+.nav-link:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-left: auto;
+  /* border: 2px lightpink solid; */
+  /* margin: 0px 20px; */
+} 
+
+.nav-link.login-button {
+  background-color: rgb(100, 100, 100);
+  padding: 0px 20px;
+}
+.locked-icon {
+  display: flex;
+  height: 20px;
+  margin-right: 5px;
+}
