@@ -5,12 +5,10 @@
   margin: 0px 0px;
 }
 
-.white-image {
-}
-
 .back-arrow-image {
-  filter: brightness(0) invert(1) grayscale(100%);
-  height: 40px;
+  /* filter: brightness(0) invert(1) grayscale(100%); */
+  height: 20px;
+  margin-right: 5px;
 }
 
 
