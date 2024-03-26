@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/website.css">
+
+  <!-- onemap leafletjs map -->
+  <link rel="stylesheet" href="https://www.onemap.gov.sg/web-assets/libs/leaflet/leaflet.css" />
+  <script src="https://www.onemap.gov.sg/web-assets/libs/leaflet/onemap-leaflet.js"></script>
+    
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="left-section">
+      <a class="nav-link website-logo" href="./index.html">
+        <img class="singapore-flag" src="./images/singapore-flag.png" alt="">
+        Map
+      </a>
+    </div>
+
+    <nav class="middle-section">
+      <a class="nav-link" href="./html/route_planner.html">Route Planner</a>
+      <a class="nav-link border" href="./html/bus_explorer.html">Bus Explorer</a>
+    </nav>
+    
+    <div class="right-section">
+      <a class="nav-link login-button" href="./html/login.html">
+        <img class="locked-icon" src="./images/locked-icon.png" alt="">
+        Login 
+      </a>
+    </div>
+  </div>
+  <!-- end of header -->
+
+  <div id="userInput">
+    <input type="text" id="srcInput" placeholder="Enter your address">
+    <br>
+    <input type="text" id="dstInput" placeholder="Enter your destination">
+    <ul id="autocomplete"></ul>
+    <br>
+    <ul id="autocomplete"></ul>
+    <button id="calBtn" onclick="calRoute()">Enter</button>
+  </div>
+  <div id="map"></div>
+
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
